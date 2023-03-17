@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/x-icon" href="images/Yeet Moderator.png" >
+    
+  <link rel="icon" type="image/x-icon" href="images/Yeet Moderator.png" >
 
   <title>Yeet </title>
   <link rel="stylesheet" href="styles.css">
@@ -9,12 +10,27 @@
     @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
   </style>
+
+<script>
+  function scrollToElement() {
+    var element = document.getElementById("contact-scroll");
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+    }
+  }
+  </script>
+
+
 </head>
 
 <body>
     <img src="images/banner discord.png" class="banner" height="454" width="1440">
     
-    <button class="ContactButton">Contact me</button>
+    <button  onclick='scrollToElement()' class="ContactButton" >Contact me</button>
 
     <a href="https://twitter.com/Yeet_SK" target="_blank">
         <img src="images/twittericon.png" alt="Twitter Icon" class="TwitterIcon">
@@ -66,7 +82,7 @@
 
 
       <a href="https://twitter.com/Yeet_SK" target="_blank"> 
-        <p class="Twitter">Twitter │Yeet_SK  </p>
+        <p class="Twitter" id='contact-scroll'>Twitter │Yeet_SK  </p>
      <img src="images/twitter white icon.png" class="TwitterIconContact">
     </a>
     
