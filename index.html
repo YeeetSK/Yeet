@@ -22,6 +22,19 @@
       });
     }
   }
+
+
+  function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      window.addEventListener('scroll', function() {
+        var button = document.querySelector('.scroll-to-top');
+        button.classList.toggle('show', window.scrollY > 100);
+      });
   </script>
 
 
@@ -92,6 +105,8 @@
       <img src="images/footersquare.png" class="Footer">
 
       <p class="FooterInfo">Made by Yeet. All rights reserved 2023 ©</p>
+
+      <img src="images/scroll-up-icon-18-removebg-preview.png"  class="sticky-image"   onclick="scrollToTop()"/>
 
 
 
